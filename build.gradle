@@ -14,8 +14,12 @@ java {
 repositories {
 	mavenCentral()
 }
-
+//의존성 추가 섹터 //프로젝트 생성을 위한 도구들을 넣어준다
 dependencies {
+	// 롬복추가
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
